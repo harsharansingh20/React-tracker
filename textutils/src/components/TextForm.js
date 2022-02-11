@@ -9,12 +9,18 @@ export default function TextForm(props) {
     setText(newText);
   }
   
+  const handledownclick = ()=>{
+    let Newtext = text.toLowerCase();
+    setText(Newtext);
+  }
+
+
   const handleonchange = (event)=>{
     console.log("on change");
     setText(event.target.value);
   }
   
-  const [text,setText] = useState('enter text here');
+  const [text,setText] = useState('');
   return (
     
     <>
@@ -26,11 +32,20 @@ export default function TextForm(props) {
   <textarea className="form-control" value={text} onChange={handleonchange} id="exampleFormControlTextarea1" rows="10"></textarea>
 </div>
 
-<button type="button" className="btn btn-outline-dark" onClick={handleupclick} >Convert to uppercase</button>
+<button type="button" className="btn btn-outline-dark" onClick={handleupclick} >Convert to Uppercase</button>
+<button type="button" className="btn btn-outline-dark" id="button1" onClick={handledownclick} >Convert to Lowercase</button>
+
 </div>
+
+<div className="container my-3 ">
+<h2 className="heading" >Your Text Summary</h2>
+<p className="my-3" >{text.split(" ").length} words and {text.length} characters </p>
+<p>{0.008 * text.split(" ").length} Minutes To Read</p>
+<h2 className="heading" >Preview</h2>
+<p className="my-3">{text}</p>
+  </div>
+
 </>
-
-
 
   )
 }
