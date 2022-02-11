@@ -14,6 +14,11 @@ export default function TextForm(props) {
     setText(Newtext);
   }
 
+const clear = ()=>{
+  let Newtext=''
+  setText(Newtext)
+}
+
 
   const handleonchange = (event)=>{
     console.log("on change");
@@ -34,6 +39,7 @@ export default function TextForm(props) {
 
 <button type="button" className="btn btn-outline-dark" onClick={handleupclick} >Convert to Uppercase</button>
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={handledownclick} >Convert to Lowercase</button>
+<button type="button" className="btn btn-outline-dark" id="button1" onClick={clear} >Clear Text</button>
 
 </div>
 
