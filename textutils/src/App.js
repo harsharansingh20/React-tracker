@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar title="set title here" about="set about here" services = "services" />
-    <TextForm/>
+    <TextForm title="Enter Your Text Here To Analyze Below" />
     </>
   );
 }
