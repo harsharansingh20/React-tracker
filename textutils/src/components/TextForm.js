@@ -19,6 +19,26 @@ const clear = ()=>{
   setText(Newtext)
 }
 
+const firstCap = ()=>{
+        let newText = text.toLowerCase() 
+        let newText2 = newText.charAt(0).toUpperCase() + newText.slice(1);
+        setText(newText2)
+    }
+
+const copy = ()=>{
+  let text = document.getElementById('exampleFormControlTextarea1');
+  text.select();
+navigator.clipboard.writeText(text.value);
+
+}
+
+const handleExtraSpaces = ()=>{
+  let newText = text.split(/[ ]+/);
+  setText(newText.join(" "));
+}
+
+
+
 
   const handleonchange = (event)=>{
     console.log("on change");
@@ -26,6 +46,9 @@ const clear = ()=>{
   }
   
   const [text,setText] = useState('');
+
+  
+
   return (
     
     <>
@@ -40,6 +63,8 @@ const clear = ()=>{
 <button type="button" className="btn btn-outline-dark" onClick={handleupclick} >Convert to Uppercase</button>
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={handledownclick} >Convert to Lowercase</button>
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={clear} >Clear Text</button>
+<button type="button" className="btn btn-outline-dark" id="button1" onClick={firstCap} >First Word Capital</button>
+<button type="button" className="btn btn-outline-dark" id="button1" onClick={handleExtraSpaces} >Remove Extra Spaces</button>
 
 </div>
 
