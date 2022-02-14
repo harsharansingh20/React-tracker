@@ -56,7 +56,7 @@ const handleExtraSpaces = ()=>{
 <div className="container my-5">
 
 <div className="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label">{props.title}</label>
+  <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.title}</label>
   <textarea className="form-control" value={text} onChange={handleonchange} id="exampleFormControlTextarea1" rows="10"></textarea>
 </div>
 
@@ -65,6 +65,7 @@ const handleExtraSpaces = ()=>{
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={clear} >Clear Text</button>
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={firstCap} >First Word Capital</button>
 <button type="button" className="btn btn-outline-dark" id="button1" onClick={handleExtraSpaces} >Remove Extra Spaces</button>
+<button type="button" className="btn btn-outline-dark" id="button1" onClick={copy} >Copy Text</button>
 
 </div>
 
