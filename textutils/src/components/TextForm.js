@@ -7,34 +7,45 @@ export default function TextForm(props) {
   const handleupclick = ()=>{
     let newText= text.toUpperCase()
     setText(newText);
+    props.showAlert("Converted to uppercase !", "success");
   }
   
   const handledownclick = ()=>{
     let Newtext = text.toLowerCase();
     setText(Newtext);
+    props.showAlert("Converted to lowerercase !", "success");
+
   }
 
 const clear = ()=>{
   let Newtext=''
   setText(Newtext)
+  props.showAlert("Text cleared!", "success");
+
 }
 
 const firstCap = ()=>{
         let newText = text.toLowerCase() 
         let newText2 = newText.charAt(0).toUpperCase() + newText.slice(1);
         setText(newText2)
+        props.showAlert("First word capitalized !", "success");
+
     }
 
 const copy = ()=>{
   let text = document.getElementById('exampleFormControlTextarea1');
   text.select();
 navigator.clipboard.writeText(text.value);
+props.showAlert("Copied to clipboard !", "success");
+
 
 }
 
 const handleExtraSpaces = ()=>{
   let newText = text.split(/[ ]+/);
   setText(newText.join(" "));
+props.showAlert("Extra spaces removed !", "success");
+
 }
 
 
