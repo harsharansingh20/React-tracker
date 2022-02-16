@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
+import Alert from './components/Alert';
 import { useState } from 'react';
 
 function App() {
@@ -25,6 +26,7 @@ const toggleMode=()=>{
   return (
     <>
     <Navbar title="Textutils" about="About" services = "services" mode={mode} toggleMode={toggleMode}  />
+    <Alert alert = "hello" />
     <TextForm title="Enter Your Text Here To Analyze Below" mode={mode} />
     {/* <About/> */}
     </>
