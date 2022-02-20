@@ -47,7 +47,7 @@ const toggleMode=()=>{
   return (
     <>
     <Navbar title="Textutils" about="About" services = "services" mode={mode} toggleMode={toggleMode}  />
-    {/* <Alert alert = {alert} /> */}
+    <Alert alert = {alert} />
     <Switch>
           <Route path="/about">
             <About />
