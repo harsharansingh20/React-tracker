@@ -60,7 +60,7 @@ const toggleMode=()=>{
           </Route>
         </Switch>
     <TextForm  showAlert={showAlert}  title="Enter Your Text Here To Analyze Below" mode={mode} />
-    {/* <About/> */}
+    <About/>
     </>
   );
 }
