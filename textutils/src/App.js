@@ -46,21 +46,27 @@ const toggleMode=()=>{
 
   return (
     <>
-    <Navbar title="Textutils" about="About" services = "services" mode={mode} toggleMode={toggleMode}  />
-    <Alert alert = {alert} />
+    <Router>
+
+
+     <Navbar title="Textutils"  mode={mode} toggleMode={toggleMode}  />
+    <Alert alert = {alert} /> 
+    <div className="container my-3">
+      
     <Switch>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
           <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+            
     <TextForm  showAlert={showAlert}  title="Enter Your Text Here To Analyze Below" mode={mode} />
-    <About/>
+          </Route>
+    </Switch>
+
+
+
+    </div>
+    </Router>
     </>
   );
 }
