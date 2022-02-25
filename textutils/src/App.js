@@ -56,7 +56,7 @@ const toggleMode=()=>{
             {/* <About /> */}
         {/* </Route> */}
         {/* <Route path="/"> */}
-            {/* <TextForm  showAlert={showAlert}  title="Enter Your Text Here To Analyze Below" mode={mode} /> */}
+            <TextForm  showAlert={showAlert}  title="Enter Your Text Here To Analyze Below" mode={mode} />
         {/* </Route> */}
         
   
