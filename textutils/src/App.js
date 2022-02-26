@@ -45,8 +45,8 @@ const toggleMode=()=>{
 
   return (
     <>
-    <Navbar title="Textutils"  mode={mode} toggleMode={toggleMode}  />
-    <Alert alert = {alert} /> 
+    {/* <Navbar title="Textutils"  mode={mode} toggleMode={toggleMode}  />
+    <Alert alert = {alert} />  */}
     
     {/* <Router> */}
     <div className="container my-3">
