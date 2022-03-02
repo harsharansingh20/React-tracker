@@ -71,12 +71,12 @@ props.showAlert("Extra spaces removed !", "success");
   <textarea className="form-control"   value={text} onChange={handleonchange} style={{backgroundColor: props.mode=== 'dark'?'grey':'white' , color:  props.mode=== 'dark'?'white':'black' }} id="exampleFormControlTextarea1" rows="10"></textarea>
 </div>
 
-<button type="button" className="btn btn-outline-info" onClick={handleupclick} >Convert to Uppercase</button>
-<button type="button" className="btn btn-outline-info" id="button1" onClick={handledownclick} >Convert to Lowercase</button>
-<button type="button" className="btn btn-outline-info" id="button1" onClick={clear} >Clear Text</button>
-<button type="button" className="btn btn-outline-info" id="button1" onClick={firstCap} >First Word Capital</button>
-<button type="button" className="btn btn-outline-info" id="button1" onClick={handleExtraSpaces} >Remove Extra Spaces</button>
-<button type="button" className="btn btn-outline-info" id="button1" onClick={copy} >Copy Text</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" onClick={handleupclick} >Convert to Uppercase</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" id="button1" onClick={handledownclick} >Convert to Lowercase</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" id="button1" onClick={clear} >Clear Text</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" id="button1" onClick={firstCap} >First Word Capital</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" id="button1" onClick={handleExtraSpaces} >Remove Extra Spaces</button>
+<button type="button" className="btn btn-outline-info mx-2 my-2" id="button1" onClick={copy} >Copy Text</button>
 
 </div>
 
