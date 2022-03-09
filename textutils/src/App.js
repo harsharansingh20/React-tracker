@@ -53,10 +53,10 @@ const toggleMode=()=>{
         <Switch>
 
         <Route path="/about">
-            <About />
+            <About  mode={mode} />
         </Route>
         <Route path="/">
-            <TextForm  showAlert={showAlert}  title="Enter Your Text Here To Analyze Below" mode={mode} />
+            <TextForm  showAlert={showAlert}  title=" Try Textutils - Word Counter Character Counter" mode={mode} />
         </Route>
         
   
