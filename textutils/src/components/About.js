@@ -9,14 +9,15 @@ export default function About(props) {
 
 let myStyle = {
   color : props.mode === 'dark' ? 'white': '#04053a',
-  backgroundColor : props.mode === 'dark' ? '#040540' : 'white'
+  backgroundColor : props.mode === 'dark' ? '#020327' : 'white'
+  
  }
 
  
   return (
     <>
 
-    <div className="container" style={myStyle} >
+    <div className="container" style={myStyle}  >
 
     <h2>About Us</h2>
 
